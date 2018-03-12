@@ -78,6 +78,9 @@ supported-formats:
     - .txt
     - .fastq
     - .cov.bedg
+    - .jpeg
+    - .fits
+    - .tbl
     
 # Supported services of BioNimbuZ    
 supported-services:
@@ -117,3 +120,11 @@ supported-services:
         # No one knows what this means (only Willian)
         presetMode: 4242000000
         info: The bedtools coverage tool computes both the depth and breadth of coverage of features in file B on the features in file A.
+    - !br.unb.cic.bionimbuz.plugin.PluginService 
+        id: 5
+        name: mImgtbl
+        path: ./data/programs/teste_montage/mImgtbl.sh
+        # No one knows what this means (only Willian)
+        presetMode: 4242000000
+        info: Create a metadata table of the input images.
+           
