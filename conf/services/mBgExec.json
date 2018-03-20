@@ -1,0 +1,6 @@
+{
+    "id": 14,
+    "name": "mBgExec",
+    "info": "Apply corrections to each image.",
+    "path": "./data/programs/teste_montage/mBgExec.sh"
+}

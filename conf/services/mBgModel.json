@@ -1,0 +1,6 @@
+{
+    "id": 13,
+    "name": "mBgModel",
+    "info": "Perform background modeling and compute corrections for each image.",
+    "path": "./data/programs/teste_montage/mBgModel.sh"
+}

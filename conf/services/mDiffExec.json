@@ -1,0 +1,6 @@
+{
+    "id": 11,
+    "name": "mDiffExec",
+    "info": "Runs mDiff on all the pairs identified by mOverlaps",
+    "path": "./data/programs/teste_montage/mDiffExec.sh"
+}

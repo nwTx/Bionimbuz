@@ -1,0 +1,6 @@
+{
+    "id": 8,
+    "name": "mAdd",
+    "info": "Coadd the images to create a mosaic",
+    "path": "./data/programs/teste_montage/mAdd.sh"
+}
