@@ -1,0 +1,6 @@
+{
+    "id": 6,
+    "name": "mMakeHdr",
+    "info": "Create a FITS header describing the footprint of the mosaic",
+    "path": "./data/programs/teste_montage/mMakeHdr.sh"
+}

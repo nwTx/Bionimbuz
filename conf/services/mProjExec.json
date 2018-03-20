@@ -1,0 +1,6 @@
+{
+    "id": 7,
+    "name": "mProjExec",
+    "info": "Reproject the input images.",
+    "path": "./data/programs/teste_montage/mProjExec.sh"
+}

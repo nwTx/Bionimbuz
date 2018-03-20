@@ -1,0 +1,6 @@
+{
+    "id": 10,
+    "name": "mOverlaps",
+    "info": "Analyze an image metadata table to determinate a list of overlapping images.",
+    "path": "./data/programs/teste_montage/mOverlaps.sh"
+}

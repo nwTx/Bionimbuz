@@ -1,0 +1,6 @@
+{
+    "id": 9,
+    "name": "mViewer",
+    "info": "Make a PNG image from a .fits file",
+    "path": "./data/programs/teste_montage/mViewer.sh"
+}
