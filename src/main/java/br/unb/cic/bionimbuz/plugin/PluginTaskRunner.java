@@ -89,12 +89,36 @@ public class PluginTaskRunner implements Callable<PluginTask> {
         if (!outputFolder.exists()) {
             outputFolder.mkdirs();
         }
+        
+        //Changing rule to divide string, before was: divide at 0,7 and 7 to the end
+        //Now it looks for the last input/output regex to divide it
+        
+        String antesdivisao = this.task.getJobInfo().getArgs();
+        
+        int ind = antesdivisao.lastIndexOf("%I");
+        int ond = antesdivisao.lastIndexOf("%O");
+        int div = 0;
+        if (ind > ond) {
+        	div = ind + 3;
+        }else {
+        	div = ond + 3;
+        }
+        	
+        
+        //String antesdivisao = this.task.getJobInfo().getArgs().substring(0, 7) + "   " + this.task.getJobInfo().getArgs().substring(7);
+        LOGGER.info("antes divisão: " + antesdivisao);
 
         // Gets only options
-        final String options = this.task.getJobInfo().getArgs().substring(7);
+        //final String options = this.task.getJobInfo().getArgs().substring(7);
+        
+
+        final String options = antesdivisao.substring(div);
+        LOGGER.info("options " + options);
 
         // Gets only args
-        String args = this.task.getJobInfo().getArgs().substring(0, 7);
+        //String args = this.task.getJobInfo().getArgs().substring(0, 7);
+        String args = antesdivisao.substring(0, div);
+        LOGGER.info("args: " + args);
 
         String reference = "";
 
