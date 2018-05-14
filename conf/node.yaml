@@ -82,6 +82,7 @@ supported-formats:
     - .fits
     - .tbl
     - .hdr
+    - .png
     
 # Supported services of BioNimbuZ    
 supported-services:

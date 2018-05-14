@@ -9,5 +9,5 @@ echo $0 $*
 #sleep 30
 
 
-mFitExec $1 $2 $3 
+mFitExec $1 $2 diffdir
 #mFitExec diffs.tbl fits.tbl diffdir

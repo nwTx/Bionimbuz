@@ -9,6 +9,7 @@
 echo $0 $*
 #sleep 30
 
+mkdir diffdir
 
-mDiffExec -p $1 $2 $3 $4
+mDiffExec -p $1 $2 $3 diffdir
 #mDiffExec -p Kprojdir/ diffs.tbl Ktemplate.hdr diffdir
