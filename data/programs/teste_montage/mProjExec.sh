@@ -8,6 +8,11 @@
 echo $0 $*
 #sleep 30
 
-mkdir Kprojdir
+if [ -d "Kprojdir" ]; then
+	echo "Diretorio Kprojdir já criado"
+else
+	mkdir Kprojdir
+fi
+
 
 mProjExec -p $1 $2 $3 Kprojdir $4
