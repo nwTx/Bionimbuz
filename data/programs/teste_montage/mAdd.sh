@@ -8,5 +8,15 @@
 echo $0 $*
 #sleep 30
 
+#${file##*.}
+
+
+
+#if [[ $ ]]; then
+	#statements
+#fi
+
+
+
 
 mAdd -p $1 $2 $3 $4

@@ -10,7 +10,14 @@ echo $0 $*
 #sleep 30
 
 
-mBgModel -p $1 $2 $3 $4 
+if [ -d "corrdir" ]; then
+	echo "Diretorio corrdir já criado"
+else
+	mkdir corrdir
+fi
+
+
+mBgModel -p $1 $2 $3 corrdir
 #mBgExec -p Kprojdir/ images.tbl corrections.tbl corrdir
 
 

@@ -9,7 +9,11 @@
 echo $0 $*
 #sleep 30
 
-mkdir diffdir
+if [ -d "diffdir" ]; then
+	echo "Diretorio diffdir já criado"
+else
+	mkdir diffdir
+fi
 
 mDiffExec -p $1 $2 $3 diffdir
 #mDiffExec -p Kprojdir/ diffs.tbl Ktemplate.hdr diffdir
