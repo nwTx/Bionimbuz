@@ -17,7 +17,7 @@ else
 fi
 
 
-mBgModel -p $1 $2 $3 corrdir
+mBgExec -p $1 $2 $3 corrdir
 #mBgExec -p Kprojdir/ images.tbl corrections.tbl corrdir
 
 
